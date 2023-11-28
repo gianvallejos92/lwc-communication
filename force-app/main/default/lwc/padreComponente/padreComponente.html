@@ -11,8 +11,8 @@
           <lightning-input
             type="text"
             label="Texto en Padre"
-            value={subject}
-            onchange={handleSubject}
+            value={textoPadre}
+            onchange={handleTextoPadre}
           >
           </lightning-input>
         </div>
@@ -21,7 +21,7 @@
       <div class="slds-size_2-of-4">
         <div class="slds-m-top_xx-small slds-m-horizontal_medium">
           <lightning-button
-            onclick={generatePost}
+            onclick={enviarAHijo}
             variant="brand"
             label="Enviar Texto a Hijo"
           >
@@ -31,7 +31,8 @@
     </div>
     <hr>
     <div>
-      <c-hijo-componente></c-hijo-componente>
+      <c-hijo-componente>
+      </c-hijo-componente>
     </div>
   </lightning-card>
 </template>
