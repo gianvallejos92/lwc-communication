@@ -1,4 +1,4 @@
-import { LightningElement, api } from 'lwc';
+import { LightningElement } from 'lwc';
 
 export default class HijoComponente extends LightningElement {
   message = "Soy un componente Hijo";
@@ -13,8 +13,4 @@ export default class HijoComponente extends LightningElement {
     this.textoHijo = "";
   }
 
-  @api
-  saludarEnConsola() {
-    console.log('Hola Champion!');
-  }
 }
