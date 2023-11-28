@@ -12,4 +12,10 @@ export default class PadreComponente extends LightningElement {
     console.log('Texto Padre: ' + this.textoPadre);
     this.textoPadre = "";
   }
+
+  saludarEnPadre (evt) {
+    const text = evt.detail;
+    console.log('Message from child: ' + text);
+    this.message = text;
+  }
 }
