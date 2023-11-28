@@ -10,6 +10,7 @@ export default class PadreComponente extends LightningElement {
 
   enviarAHijo () {
     console.log('Texto Padre: ' + this.textoPadre);
+    this.template.querySelector('c-hijo-componente').reemplazarMensajeDesdePadre(this.textoPadre);
     this.textoPadre = "";
   }
 }
