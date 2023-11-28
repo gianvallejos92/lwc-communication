@@ -1,0 +1,33 @@
+<template>
+  <lightning-card  title="Otro">
+    <div class="slds-grid slds-wrap">
+      <div class="slds-size_2-of-4">
+        <div class="slds-m-top_xx-small slds-m-horizontal_medium">
+          <strong> Mensaje en Otro: </strong> <p>{message}</p>
+        </div>
+      </div>
+      <div class="slds-size_2-of-4">
+        <div class="slds-m-top_xx-small slds-m-horizontal_medium">
+          <lightning-input
+            type="text"
+            label="Texto en Otro"
+            value={subject}
+            onchange={handleSubject}
+          >
+          </lightning-input>
+        </div>
+      </div>
+      <div class="slds-size_2-of-4"></div>
+      <div class="slds-size_2-of-4">
+        <div class="slds-m-top_xx-small slds-m-horizontal_medium">
+          <lightning-button
+            onclick={generatePost}
+            variant="success"
+            label="Enviar Texto a Padre Izquierda"
+          >
+          </lightning-button>
+        </div>
+      </div>
+    </div>
+  </lightning-card>
+</template>

@@ -1,0 +1,37 @@
+<template>
+  <lightning-card  title="Padre">
+    <div class="slds-grid slds-wrap">
+      <div class="slds-size_2-of-4">
+        <div class="slds-m-top_xx-small slds-m-horizontal_medium">
+          <strong> Mensaje en Padre: </strong> <p>{message}</p>
+        </div>
+      </div>
+      <div class="slds-size_2-of-4">
+        <div class="slds-m-top_xx-small slds-m-horizontal_medium">
+          <lightning-input
+            type="text"
+            label="Texto en Padre"
+            value={subject}
+            onchange={handleSubject}
+          >
+          </lightning-input>
+        </div>
+      </div>
+      <div class="slds-size_2-of-4"></div>
+      <div class="slds-size_2-of-4">
+        <div class="slds-m-top_xx-small slds-m-horizontal_medium">
+          <lightning-button
+            onclick={generatePost}
+            variant="brand"
+            label="Enviar Texto a Hijo"
+          >
+          </lightning-button>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div>
+      <c-hijo-componente></c-hijo-componente>
+    </div>
+  </lightning-card>
+</template>
