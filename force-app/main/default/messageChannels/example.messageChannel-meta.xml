@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LightningMessageChannel xmlns="http://soap.sforce.com/2006/04/metadata">
+    <masterLabel>EjemploLex</masterLabel>
+    <isExposed>true</isExposed>
+    <description>Message Channel to show how to communicate two unrelated components</description>
+     <lightningMessageFields>
+        <fieldName>message</fieldName>
+        <description>Mensaje que enviaremos de uno a otro componente</description>
+    </lightningMessageFields>
+</LightningMessageChannel>
